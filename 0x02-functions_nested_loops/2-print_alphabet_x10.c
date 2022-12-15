@@ -3,22 +3,23 @@
 /**
  * print_alphabet_x10 - print a-z 10 times
  *
+ * Return: Always 0 Successful
  */
 
 void print_alphabet_x10(void)
-
 {
-	int i;
-	char j;
+	int alphabet;
+	int count;
 
-	for (i = 0; i < 10; i++)
+	count = 0;
+	while (count < 10)
 	{
-		for (j = a; j <= z; j++)
+		for (alphabet = 'a' ; alphabet <= 'z' ; alphabet++)
 		{
-			_putchar(j);
+			_putchar(alphabet);
 		}
+
+		count++;
 		_putchar('\n');
 	}
-
 }
-
